@@ -3,77 +3,104 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BangBa Fit</title>
-
+<meta name="description" content="BangBa Fit legal information, privacy policy, terms of use, and account deletion information.">
+<title>BangBa Fit | Legal & Privacy</title>
 <style>
+:root{
+  --bg:#0b0d0c;--panel:#131714;--text:#eef2ef;--muted:#aab4ad;
+  --accent:#31d158;--line:#263029;--max:920px;
+}
+*{box-sizing:border-box}
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#0f0f0f;
-    color:white;
-    text-align:center;
-    margin:0;
-    padding:40px;
+  margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);color:var(--text);line-height:1.65;
 }
-
-.container{
-    max-width:700px;
-    margin:auto;
+header{
+  padding:72px 20px 48px;text-align:center;border-bottom:1px solid var(--line);
 }
-
-h1{
-    color:#31d158;
-    font-size:42px;
+.brand{color:var(--accent);font-weight:900;letter-spacing:.5px;font-size:20px}
+h1{font-size:clamp(38px,7vw,60px);line-height:1.05;margin:10px 0 16px}
+.subtitle{max-width:650px;margin:auto;color:var(--muted);font-size:17px}
+main{max-width:var(--max);margin:auto;padding:42px 20px 70px}
+.intro{text-align:center;margin-bottom:34px}
+.intro h2{font-size:28px;margin-bottom:8px}
+.intro p{color:var(--muted);max-width:650px;margin:0 auto}
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px;
 }
-
-a{
-    display:block;
-    margin:20px;
-    padding:18px;
-    border-radius:10px;
-    text-decoration:none;
-    background:#1f1f1f;
-    color:white;
-    font-size:20px;
+.card{
+  display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);
+  border-radius:18px;padding:24px;min-height:250px;text-decoration:none;color:var(--text);
+  transition:transform .15s ease,border-color .15s ease;
 }
-
-a:hover{
-    background:#31d158;
-    color:black;
+.card:hover{transform:translateY(-3px);border-color:var(--accent)}
+.icon{font-size:30px;margin-bottom:14px}
+.card h3{font-size:21px;margin:0 0 9px}
+.card p{color:var(--muted);margin:0 0 22px;flex:1}
+.action{color:var(--accent);font-weight:700}
+.contact{
+  margin-top:34px;background:var(--panel);border:1px solid var(--line);
+  border-radius:18px;padding:24px;text-align:center;
 }
-
+.contact h2{margin:0 0 8px;font-size:23px}
+.contact p{margin:5px 0;color:var(--muted)}
+a{color:var(--accent)}
 footer{
-    margin-top:50px;
-    color:#999;
+  max-width:var(--max);margin:auto;padding:0 20px 42px;
+  color:var(--muted);font-size:13px;text-align:center;
+}
+@media(max-width:760px){
+  header{padding-top:52px}.grid{grid-template-columns:1fr}.card{min-height:auto}
 }
 </style>
-
 </head>
-
 <body>
 
-<div class="container">
+<header>
+  <div class="brand">BANGBA FIT</div>
+  <h1>Legal & Privacy</h1>
+  <p class="subtitle">Transparency matters. Review BangBa Fit's legal terms, privacy practices, and account deletion information below.</p>
+</header>
 
-<h1>BangBa Fit</h1>
+<main>
+  <div class="intro">
+    <h2>BangBa Fit Legal Center</h2>
+    <p>These resources explain how BangBa Fit operates, how personal information is handled, and the options available to users.</p>
+  </div>
 
-<p>
-Welcome to the official BangBa Fit legal pages.
-</p>
+  <div class="grid">
+    <a class="card" href="privacy.html">
+      <div class="icon">🔒</div>
+      <h3>Privacy Policy</h3>
+      <p>Learn what information BangBa Fit may process, why it is used, how it is protected, and the privacy choices available to you.</p>
+      <span class="action">View Privacy Policy →</span>
+    </a>
 
-<a href="privacy.html">
-Privacy Policy
-</a>
+    <a class="card" href="terms.html">
+      <div class="icon">📄</div>
+      <h3>Terms of Use</h3>
+      <p>Review the rules and conditions governing accounts, subscriptions, workouts, challenges, XP, User Content, and use of BangBa Fit.</p>
+      <span class="action">View Terms of Use →</span>
+    </a>
 
-<a href="terms.html">
-Terms of Use
-</a>
+    <a class="card" href="delete-account.html">
+      <div class="icon">👤</div>
+      <h3>Account & Data Deletion</h3>
+      <p>Find instructions for deleting your BangBa Fit account and information about what happens to associated personal data.</p>
+      <span class="action">View Deletion Options →</span>
+    </a>
+  </div>
+
+  <div class="contact">
+    <h2>Need Help?</h2>
+    <p>For support, privacy questions, or account-related requests:</p>
+    <p><strong><a href="mailto:bangbafit@outlook.com">bangbafit@outlook.com</a></strong></p>
+  </div>
+</main>
 
 <footer>
-
-© 2026 BangBa Fit
-
+  © 2026 BangBa Fit · Privacy Policy Version 1.0 · Terms of Use Version 1.0
 </footer>
-
-</div>
 
 </body>
 </html>
